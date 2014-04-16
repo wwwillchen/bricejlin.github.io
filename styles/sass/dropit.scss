@@ -38,9 +38,10 @@
     ul { 
         display: none; 
     }
-    li a:first-child { 
-        border-bottom: 1px dotted #ccc; 
-        color: #fff;
+    li a { 
+        // border-bottom: 1px dotted #ccc; 
+        color: #000;
+        font-weight: bold;
     } 
 }
 .menu ul.dropit-submenu {
@@ -61,16 +62,17 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .writer .dropit, .writer .dropit-submenu {
+    .dropit .dropit-open .dropit-submenu {
+        width: 187px
+    }
+    .writer .dropit-submenu {
         left: -175%;
     }
-    .dev .dropit, .dev .dropit-submenu {
-        left: -41%;
+    .photog .dropit-submenu,
+    .dev .dropit-submenu {
+        left: -44%;
     }
-    .photog .dropit, .photog .dropit-submenu {
-        left: -48%;
-    }
-    .home .dropit, .home .dropit-submenu {
+    .home .dropit-submenu {
         left: -402%;
     }
 }

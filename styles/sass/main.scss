@@ -47,23 +47,17 @@ h1, h2 {
     padding: 0 16%;
 }
 
-#header-wrapper {
-    width: 100%;
-    background-color: #fff;
-    position: fixed;
-    z-index: 9999;
-    height: 129px;
-}
-
 #main-header {
     font-family: 'Merriweather';
-    position: fixed;
+    background-color: #fff;
+    color: #000;
     height: 130px;
     width: 100%;
     padding-top: 30px;
-    z-index: 9999;
-    background-color: #274973;
-    color: #fff;
+    position: fixed;
+    z-index: 100;
+    -webkit-transition: all .5s;
+    transition: all .5s;
     h1, h2 {
         line-height: 1;
     }
@@ -73,45 +67,36 @@ h1, h2 {
     h2 {
         font-size: 1.3em;
     }
-    #name a {
-        color: #fff;
+    #name {
+        -webkit-transition: all .7s;
+        transition: all .7s;
+        a {
+            color: #000;
+        }
     }
+}
 
-}
-// AB test
-#main-header {
-    background-color: #fff;
-    color: #000;
-    border-bottom: 1px solid #000;
-    margin: 0 10%;
-    padding: 30px 6% 0;
-    width: 80%;
-    #name a {
-        color: #000;
-    }
-    .menu li a:first-child {
-        color: #000;
+#main-header.sticky {
+    height: 4em;
+    padding: 10px 16% 0;
+    #name {
+        font-size: .9em;
     }
 }
-// no border bottom
-#main-header {
-    border-bottom: none;
-}
-#main {
-    padding-top: 6.5em !important;
-}
+
 @media only screen and (max-width: 860px) {
     #main-header {
-        width: 90%;
-        margin: 0 5%;
-        padding: 30px 1% 0;
+        padding: 30px 6% 0;
+    }
+    #main-header.sticky {
+        padding: 10px 6% 0;
     }
 }
 
 #main {
     font-size: 120%;
-    padding-top: 8em;
     font-weight: 100;
+    padding-top: 6.5em;
     h2 {
         font-family: 'Merriweather', serif;
     }
@@ -170,7 +155,7 @@ h1, h2 {
 
 .post-item {
     float: left;
-    width: 47%;
+    width: 46%;
     text-align: justify;
     color: rgb(71,71,71);
     font: 200 100%/1.7 'Source Sans Pro', sans-serif;
@@ -213,18 +198,9 @@ h1, h2 {
     .container {
         padding: 0 6%;
     }
-    .post-item {
-        width: 100%;
-    }
-    .web-app {
-        width: 46%;
-    }
-    .left {
-        margin-right: 0;
-    }
 }
 @media only screen and (max-width: 540px) {
-    .web-app {
+    .post-item {
         width: 100%;
     }
 }
@@ -247,7 +223,10 @@ h1, h2 {
         font-size: 8px;
     }
     #main-header {
-        height: 10%;
+        height: 12%;
+    }
+    #main-header.sticky {
+        height: 5em;
     }
     #main {
         padding-top: 10em;
