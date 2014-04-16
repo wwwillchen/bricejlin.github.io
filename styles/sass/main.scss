@@ -1,0 +1,255 @@
+// bower:scss
+// endbower
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600);
+
+$mousehighlight: #bcdff5;
+$linkcolor: rgb(0,0,0);
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+::-moz-selection {
+    background: $mousehighlight;
+}
+::selection {
+    background: $mousehighlight;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font: 100%/1.5 'Source Sans Pro', serif;
+    background-color: #fff;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: $linkcolor;
+}
+
+h1, h2 {
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.container {
+    padding: 0 16%;
+}
+
+#header-wrapper {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 9999;
+    height: 129px;
+}
+
+#main-header {
+    font-family: 'Merriweather';
+    position: fixed;
+    height: 130px;
+    width: 100%;
+    padding-top: 30px;
+    z-index: 9999;
+    background-color: #274973;
+    color: #fff;
+    h1, h2 {
+        line-height: 1;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    #name a {
+        color: #fff;
+    }
+
+}
+// AB test
+#main-header {
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #000;
+    margin: 0 10%;
+    padding: 30px 6% 0;
+    width: 80%;
+    #name a {
+        color: #000;
+    }
+    .menu li a:first-child {
+        color: #000;
+    }
+}
+// no border bottom
+#main-header {
+    border-bottom: none;
+}
+#main {
+    padding-top: 6.5em !important;
+}
+@media only screen and (max-width: 860px) {
+    #main-header {
+        width: 90%;
+        margin: 0 5%;
+        padding: 30px 1% 0;
+    }
+}
+
+#main {
+    font-size: 120%;
+    padding-top: 8em;
+    font-weight: 100;
+    h2 {
+        font-family: 'Merriweather', serif;
+    }
+}
+
+.posts {
+    font-family: 'Source Sans Pro';
+    margin-bottom: 3em;
+    img {
+        width: 100%;
+    }
+}
+
+.meta {
+    color: #7E7E7E;
+}
+
+#tech-copy {
+    margin-bottom: 30px;
+}
+
+.social {
+  clear: both;
+  padding-top: 2%;
+  img {
+    width: 40px;
+  }
+  ul {
+    overflow: hidden;
+    padding: 0 2%;
+    width: 70%;
+    margin: 1em auto;
+    list-style-type: none;
+    text-align: center;
+    li {
+        width: 33%;
+        float: left;
+        -webkit-transition: all .2s cubic-bezier(.15, 1, .85, .93);
+        transition: all .2s cubic-bezier(.15, 1, .85, .93);
+        &:hover {
+            -webkit-transform: scale(1.2,1.2);
+            transform: scale(1.2,1.2);
+        }
+    }
+  }
+}
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.bb-underline a {
+    border-bottom: 1px dashed #ccc;
+}
+
+.post-item {
+    float: left;
+    width: 47%;
+    text-align: justify;
+    color: rgb(71,71,71);
+    font: 200 100%/1.7 'Source Sans Pro', sans-serif;
+}
+
+.left, .web-app:nth-child(even) {
+    margin-right: 38px;
+}
+
+.web-app {
+    font-size: 80%;
+    text-align: left;
+    ul {
+        padding: 15px;
+        margin-top: 0;
+    }
+    img {
+        width: 100%;
+        border: 1px solid #ccc;
+    }
+    h3 {
+        margin-bottom: 0;
+    }
+}
+
+#spotify {
+    color: #8dcc33;
+}
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+
+@media only screen and (max-width: 860px) {
+    .container {
+        padding: 0 6%;
+    }
+    .post-item {
+        width: 100%;
+    }
+    .web-app {
+        width: 46%;
+    }
+    .left {
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .web-app {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #main-header {
+        text-align: center;
+    }
+    #main {
+        h1 {
+            font-size: 1.3em;
+        }
+        h2 {
+            font-size: 1.1em;
+        }
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    body {
+        font-size: 8px;
+    }
+    #main-header {
+        height: 10%;
+    }
+    #main {
+        padding-top: 10em;
+    }
+}

@@ -1,0 +1,76 @@
+/*
+ * Dropit v1.0
+ * http://dev7studios.com/dropit
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* These styles assume you are using ul and li */
+.dropit {
+    padding: 0;
+    display: inline;
+    .dropit-trigger { 
+        position: relative; 
+        display: inline; 
+    }
+    .dropit-submenu {
+        position: absolute;
+        top: -14%;
+        left: -3%; /* dropdown left or right */
+        z-index: 1000;
+        display: none;
+        min-width: 150px;
+        list-style: none;
+        padding: 0;
+    }
+}
+ 
+.dropit .dropit-open .dropit-submenu { 
+    display: block; 
+    width: 170px; 
+    -webkit-box-shadow: -2px 4px 11px -5px rgb(111, 111, 111);
+    -moz-box-shadow: -2px 4px 11px -5px rgb(111, 111, 111);
+    box-shadow: -2px 4px 11px -5px rgb(111, 111, 111);
+}
+.menu {
+    ul { 
+        display: none; 
+    }
+    li a:first-child { 
+        border-bottom: 1px dotted #ccc; 
+        color: #fff;
+    } 
+}
+.menu ul.dropit-submenu {
+    background-color: rgba(255, 255, 255, 0.97);
+    border-radius: 3px;
+}          
+.menu ul.dropit-submenu li a {
+    color: black;
+    display: block;
+    line-height: 25px;
+    padding: 4px 18px;
+    border: none;
+    font-family: 'Merriweather';
+}
+.menu ul.dropit-submenu a:hover {
+    background: #248fc1;
+    color: #fff;
+}
+
+@media only screen and (max-width: 400px) {
+    .writer .dropit, .writer .dropit-submenu {
+        left: -175%;
+    }
+    .dev .dropit, .dev .dropit-submenu {
+        left: -41%;
+    }
+    .photog .dropit, .photog .dropit-submenu {
+        left: -48%;
+    }
+    .home .dropit, .home .dropit-submenu {
+        left: -402%;
+    }
+}

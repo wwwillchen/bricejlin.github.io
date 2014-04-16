@@ -1,0 +1,94 @@
+/*
+ * Dropit v1.0
+ * http://dev7studios.com/dropit
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* These styles assume you are using ul and li */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/dropit\.scss}line{font-family:\0000311}}
+.dropit {
+  padding: 0;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/dropit\.scss}line{font-family:\0000314}}
+.dropit .dropit-trigger {
+  position: relative;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/dropit\.scss}line{font-family:\0000318}}
+.dropit .dropit-submenu {
+  position: absolute;
+  top: -14%;
+  left: -3%;
+  /* dropdown left or right */
+  z-index: 1000;
+  display: none;
+  min-width: 150px;
+  list-style: none;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/dropit\.scss}line{font-family:\0000330}}
+.dropit .dropit-open .dropit-submenu {
+  display: block;
+  width: 170px;
+  -webkit-box-shadow: -2px 4px 11px -5px #6f6f6f;
+  -moz-box-shadow: -2px 4px 11px -5px #6f6f6f;
+  box-shadow: -2px 4px 11px -5px #6f6f6f;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/dropit\.scss}line{font-family:\0000338}}
+.menu ul {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/dropit\.scss}line{font-family:\0000341}}
+.menu li a:first-child {
+  border-bottom: 1px dotted #ccc;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/dropit\.scss}line{font-family:\0000346}}
+.menu ul.dropit-submenu {
+  background-color: rgba(255, 255, 255, 0.97);
+  border-radius: 3px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/dropit\.scss}line{font-family:\0000350}}
+.menu ul.dropit-submenu li a {
+  color: black;
+  display: block;
+  line-height: 25px;
+  padding: 4px 18px;
+  border: none;
+  font-family: 'Merriweather';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/dropit\.scss}line{font-family:\0000358}}
+.menu ul.dropit-submenu a:hover {
+  background: #248fc1;
+  color: #fff;
+}
+
+@media only screen and (max-width: 400px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/dropit\.scss}line{font-family:\0000364}}
+  .writer .dropit, .writer .dropit-submenu {
+    left: -175%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/dropit\.scss}line{font-family:\0000367}}
+  .dev .dropit, .dev .dropit-submenu {
+    left: -41%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/dropit\.scss}line{font-family:\0000370}}
+  .photog .dropit, .photog .dropit-submenu {
+    left: -48%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/dropit\.scss}line{font-family:\0000373}}
+  .home .dropit, .home .dropit-submenu {
+    left: -402%;
+  }
+}

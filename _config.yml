@@ -1,0 +1,4 @@
+markdown: redcarpet
+pygments: true
+permalink: none
+exclude: [node_modules, css/sass, bower.json]

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--[if lte IE 8]>
+  <meta http-equiv="refresh" content="0;url=/error/browser-not-supported.php">
+  <![endif]-->
+  <title>Brice Lin - Spotify Web Player</title>
+  <meta name="description" content="Brice Lin's pursuit for a position at Spotify."/>
+
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  
+  <link rel="shortcut icon" type="image/x-icon" href="icons/spotify_icon.ico">
+<!--   <link rel="stylesheet" href="https://play.spotify.edgekey.net/client/11c9364/css/style.css" media="all" />
+ -->
+   <link rel="stylesheet" href="css/spotify.css" media="all" />
+  <link rel="stylesheet" href="css/style.css" media="all">
+</head>
+<!--[if IE 9]> <body class="ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <body> <!--<![endif]-->
+
+<div id="wrapper">
+  <div id="main-nav" class="main-menu narrow-menu">
+    <a href="#landing" id="logo" class="logo"></a>
+    <ul id="nav-items" class="main-menu-nav">
+      <li><a href="#profile" id="nav-home" class="spoticon-home-16 standard-menu-item">Brice</a></li>
+      <li><a href="#apps" id="nav-browse" class="spoticon-browse-16 standard-menu-item">Apps</a></li>
+      <li><a href="#resume" id="nav-collection" class="spoticon-collection-16 standard-menu-item">Resume</a></li>
+      <!-- <li><a id="nav-discover" class="spoticon-discover-16" "standard-menu-item">Discover</a></li> -->
+      <li><a href="#follow" id="nav-follow" class="spoticon-follow-16 standard-menu-item">Follow</a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <section id="landing-container">
+      <div id="landing">
+        <h1>Hi Spotify!</h1>
+        <h2 class="fadein-first">Looking for a U.S. Software Engineering Intern?</h2>
+        <div id="scroll-container">
+          <h2 class="fadein-second">Here I am!</h2>
+          <a href="#profile" id="arrow-scroll" class="fadein-second" onClick="_gaq.push(['_trackEvent', 'btn', 'click', 'scroll']);"></a>
+        </div>
+      </div>
+    </section><!-- end landing-container -->
+    <section id="profile-container">
+      <h1 id="profile">Profile</h1>
+      <div id="profile-pic" class="white-container">
+        <img src="img/brice.jpg" alt="brice_avatar">
+      </div>
+      <div id="profile-info" class="white-container">
+        <h1>Brice Lin</h1>
+        <p>
+          Junior Software Engineer currently looking for opportunities at a Series-F music streaming service company. Know any? :)
+        </p>
+      </div>
+      <div id="profile-follow" class="white-container">
+        <h1>Follow Me!</h1>
+        <section class="social">
+          <ul>
+            <li><a href="http://twitter.com/bricelin" target="_blank"><img src="icons/twitter.svg" alt="twitter"/></a></li>
+            <li><a href="http://facebook.com/bricejlin" target="_blank"><img src="icons/facebook.svg" alt="facebook"/></a></li>
+            <li><a href="http://linkedin.com/in/bricelin" target="_blank"><img src="icons/linkedin.svg" alt="linkedin"/></a></li>
+            <li><a href="http://github.com/bricejlin" target="_blank"><img src="icons/github.svg" alt="github"/></a></li>
+            <li><a href="http://www.flickr.com/photos/bricejlin/" target="_blank"><img src="icons/flickr.svg" alt="flickr"/></a></li>
+            <li><a href="http://play.spotify.com/user/bricelin" target="_blank"><img src="icons/spotify.svg" alt="spotify"/></a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div id="profile-artists" class="white-container">
+        <h1>Currently Listening To:</h1>
+        <div class="artist-pic">
+          <a href="https://play.spotify.com/album/1rzDtYMpZDhRgKNigB467r" target="_blank"><img src="img/night-visions.jpg" alt="night_visions"></a>
+          <p>Imagine Dragons</p>
+        </div>
+        <div class="artist-pic">
+          <a href="https://play.spotify.com/album/729Vh0HApsm7hGDVjbmtrf" target="_blank"><img src="img/days-are-gone.jpg" alt="days_are_gone"></a>
+          <p>HAIM</p>
+        </div> 
+        <div class="artist-pic">
+          <a href="https://play.spotify.com/album/4n00c0RLzY8dZiDnsNwHQf" target="_blank"><img src="img/the-ascension.jpg" alt="the_ascension"></a>
+          <p>Phil Wickham</p>
+        </div>
+        <div class="artist-pic">
+          <a href="https://play.spotify.com/album/6IQP4S4uCDbyRVeV617n76" target="_blank"><img src="img/fading-west.jpg" alt="fading_west"></a>
+          <p>Switchfoot</p>
+        </div>       
+      </div><!-- end profile-artists -->
+
+      <div id="cover-letter" class="white-container">
+        <p>     
+          As an avid music listener and legal music advocate, I’ve always longed for a platform where legally streaming music could be organized into personal playlists. Spotify is that platform for me. What I especially love about Spotify is its aspiration to be more convenient than piracy. I think Spotify tackles this problem in a very interesting way that encourages music streams through social interaction and playlist sharing.
+        </p>
+        <p>
+          My interest in Spotify was especially enforced upon visiting the Spotify office to chat with a developer that gave a coding session at Startup Institute. In our conversation, we spoke a little about the way the teams collaborate in squads, tribes and chapters and I thought that was a really interesting process that encourages open communication.
+        </p>
+        <p>
+          Since walking away from the conversation, I started to think more about the company's challenges as it continues to expand and came up with some ideas that I could possibly contribute to as an intern:
+        </p>
+        <p>
+          <strong>Discover:</strong> Spotify has huge amounts of data to leverage - user behavior, artist trends, playlists, etc. I would love to be with a team working on machine learning and finding ways to help Spotify make more personalized recommendations for Spotify users.
+        </p>
+        <p>
+          <strong>Follow:</strong> In addition to the community forums, I think Spotify has the potential to further engage and create strong community interaction within the app experience. Instead of only suggesting Facebook friends and famous artists, I’d love to explore the possibility of utilizing algorithms that suggest "Who to Follow" based on a match between their musical tastes and mine.
+        </p>
+        <p>
+          <strong>Social:</strong> People connect over the internet via shared interests. We have accounts online that share our wish lists, book lists, photo lists, etc. I think one way Spotify can differentiate itself from other music subscriber services is by strengthening its social connections between users. By allowing Spotify users to build a more customized app profile, it'll give them more things to talk about. One feature can be a personal timeline of songs that a person connected with while they were at a certain age - (Spotiline? Songline? Haha, I don’t know). Then from a technical standpoint, on the Follow page, we can try to connect people with similar interests/profiles.
+        </p>
+        <p>
+          And those are just a few ideas I have. Congratulations! We've reached halfway! And you're still reading! Awesome! Here are some more facts about me and why I could be a great fit for Spotify.
+        </p>
+        <p>
+          · I have a huge passion for music and even considered working in the music industry - spent my first year of undergrad at a private music college majoring in Audio Recording Technology.
+        </p>        
+        <p>
+          · Upon graduation from business school in May 2013, I learned about the startup industry in New York and decided to be part of it. I devoted the summer to learning programming and within five months, knew enough about Ruby / Ruby on Rails to build a few production-ready apps.
+        </p>
+        <p>
+          · I wanted to fill in the gaps in my understanding and realized the best way would be to find a community of like-minded and passionate individuals who I could learn from and with - my search led me to where I am now: on the web development track at Startup Institute, a career-accelerator that equips selected candidates with the soft/hard skills they need to succeed in a startup culture. Right now we are building an OpenTable-clone web app using Ruby on Rails. 
+        </p>
+        <p>
+          · I love MOOC's and just completed a Coursera course learning Python.
+        </p>
+        <p>
+          · I’m a bookworm. Currently getting my mind blown by POODR (Practical Object-Oriented Design in Ruby), which teaches about making code that can withstand the test of time/change. (Author’s note on pronunciation : think pooder, as if you were a three year old attempting to say computer).
+        </p>
+      </div><!-- end cover-letter -->
+    </section><!-- end profile-container -->
+    <section id="apps-container">
+      <h1 id="apps">Apps</h1>
+      <article class="app-wrapper">
+        <div class="app-pic white-container">
+          <a href="http://bricelin.com" target="_blank"><img src="img/app-photo-portfolio.png" alt="portfolio"></a>
+        </div>
+        
+        <div class="app-info white-container">
+          <h2>Brice Lin Photo Website</h2>
+          <p>Designed and handcoded entire site's HTML/CSS</p>
+          <p>Mobile Responsive Layout</p>
+          <p>To be completed: Utilize FlickR API to provide the photos</p>
+        </div>
+      </article>
+      <article class="app-wrapper">
+        <div class="app-pic white-container">
+          <a href="http://brice-reservester.herokuapp.com" target="_blank"><img src="img/app-reservester.png" alt="reservester"></a>
+        </div>
+        <div class="app-info white-container">
+          <h2>Restaurant Reservations Web App</h2>
+          <p>Built using Rails, Haml, Sass, MySQL</p>
+          <p>Implemented Redis and Resque for background email notifications</p>
+          <p>Files upload to AWS S3</p>
+        </div>
+      </article>
+      <article class="app-wrapper">
+        <div class="app-pic white-container">
+          <a href="http://catalogphototracker.herokuapp.com" target="_blank"><img src="img/app-pipetrack.png" alt="pipetrack"></a>
+        </div>
+        <div class="app-info white-container">
+          <h2>Catalog Photo Tracker App</h2>
+          <p>Designed and handcoded entire site's HTML/CSS</p>
+          <p>Built using Rails</p>
+          <p>Handcoded admin authentication</p>
+          <p>Implemented multi file upload, AJAX call on comments</p>
+          <p>Files upload to AWS S3</p>
+        </div>
+      </article>
+      <article class="app-wrapper">
+        <div class="app-pic white-container">
+          <a href="http://devotionally.herokuapp.com/" target="_blank"><img src="img/app-devotionally.png" alt="devotionally"></a>
+        </div>
+        <div class="app-info white-container">
+          <h2>Devotionally - Prayer Sharing Web Application</h2>
+          <p>Built using Rails, ttd, git</p>
+          <p>Handcoded authentication system</p>
+          <p>Users can follow each other</p>
+          <p>Mobile Responsive Layout</p>
+        </div>
+      </article>
+      <article class="app-wrapper">
+        <div class="app-pic white-container">
+          <a href="http://bricetasklist.herokuapp.com/" target="_blank"><img src="img/app-tasklist.png" alt="tasklist"></a>
+        </div>
+        <div class="app-info white-container">
+          <h2>Task List Web Application</h2>
+          <p>Built using Rails, jQuery, ttd, git</p>
+          <p>AJAX calls on adding/deleting tasks</p>
+        </div>
+      </article>
+      <article class="app-wrapper">
+        <div class="app-pic white-container">
+          <a href="http://flixreview.herokuapp.com/" target="_blank"><img src="img/app-flix.png" alt="flix"></a>
+        </div>
+        <div class="app-info white-container">
+          <h2>Flix - Movie Review Application</h2>
+          <p>Built using Rails, RSpec, Capybara</p>
+        </div>
+      </article>
+    </section><!-- end apps-container -->
+    <section id="resume-container">
+      <h1 id="resume">Resume</h1>
+      <div class="resume white-container">
+
+        <h3>Skills</h3>
+        <p><strong>programming</strong> TDD, Agile, Ruby, Ruby on Rails, Python, HTML5/CSS3, AWS, git, Haml, Sass, JQuery</p>
+        <p><strong>software</strong> Adobe Photoshop, Lightroom, Bridge, Basecamp, MS Office Suite (Word, Excel, PowerPoint, Project)</p>
+        <p><strong>systems</strong> Mac OSX, Windows(XP,7,8), Ubuntu</p><br/>
+        
+        <h3>Education</h3>
+        <p><strong>BACHELORS BUSINESS ADMINISTRATION | 2013 | BARUCH COLLEGE</strong></p>
+        <p><strong>major</strong> Computer Information Systems <strong>minor</strong> Photography</p>
+
+        <p><strong>course highlights</strong> Object-Oriented Programming I&amp;II (C++), Database Management Systems, Web Design, E-Business
+Technology, Systems Analysis and Design, Information Technology Development and Project Management</p><br/>
+
+        <h3>Experience</h3>
+        <p><strong>WEB DEVELOPMENT TRACK | STARTUP INSTITUTE | OCT 2013 – PRESENT</strong></p>
+        <p>· served as developer on 8-week intensive project with RentHop to create an xml parser script</p>
+        <p>· wireframed a favorites list feature for the RentHop website</p>
+        <p>· built an opentable-clone app using rails and rspec</p><br/>
+
+        <p><strong>TECH ASSISTANT | BARUCH COLLEGE | SEPT 2012 – MAY 2013</strong></p>
+        <p>· collaborated with professor in executing first hybrid classroom experience at Baruch</p>
+        <p>· provided technical support to end users on various web-conferencing tools on Mac/PC platforms</p>
+        <p>· communicated research findings in CUNY-wide faculty conference</p><br/>
+
+        <p><strong>ADMINISTRATIVE ASSISTANT | NEWTOWN CHURCH | JAN 2010 – AUG2010, JAN 2012 – AUG2012</strong></p>
+        <p>· served as project lead from conception to completion</p>
+        <p>· monitored day-to-day activities of the project teams and ensure work is progressing as planned</p>
+        <p>· trained and led a staff of 35 volunteers</p>
+        <p>· managed financial budget of $25k</p><br/>
+
+        <h3>Community Service</h3>
+        <p><strong>song leader</strong> (Newtown Church) ’07 to present</p>
+        <p><strong>volunteer</strong> (Missions trips) to Mississippi ‘07 to Nicaragua ‘10 ‘11 ‘13</p>
+        <p><strong>volunteer</strong> (JoyCamp Summer Camp) ’06 ’07 ’10 ‘12</p>
+        <p><strong>photographer</strong> (Kollaboration NY, Newtown Church) ’10 ‘11</p>
+      </div>
+    </section><!-- end resume-container -->
+    <section id="follow-container">
+      <h1 id="follow">Follow</h1>
+      <div class="follow white-container">
+        <p>Now that you know a bit more about me, let's talk! <a href="mailto:bricejlin@gmail.com" target="_blank">bricejlin@gmail.com</a></p>
+      </div>
+    </section><!-- end follow-container -->
+  </div><!-- end main -->
+</div><!-- end wrapper -->
+
+<script>
+  $(document).ready(function() {
+    $("#landing h2, #arrow-scroll")
+      .css({"opacity":0})
+      .delay(200)           // Wait for a bit so the user notices it fade in
+      .css({"opacity":1});  // Fade it back in. Swap css for animate in legacy browsers if required.
+  });
+</script>
+
+<script>
+  $("#main").scroll(function() {
+    if( $(this).scrollTop() > 550 ) {
+      $("#main-nav").css("left",0);
+      $("#profile-container")
+        .css({"opacity":0})
+        .css({"opacity":1});
+    } else {
+      $("#main-nav").css("left","-15%");
+      $("#profile-container")
+        .css({"opacity":1})
+        .css({"opacity":0});
+    }
+  });
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44452158-1', 'bricelin.com');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>

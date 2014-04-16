@@ -1,0 +1,26 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>window.jQuery || document.write('<script src="/bower_components/jquery/jquery.js"><\/script>')</script>
+
+<!-- build:js(app) /js/script.js -->
+<script src="/js/dropit.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/rtg.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#myGallery').rtg({
+      //imageWidth: auto,
+      spacing: 7,
+      categories: true,
+      categoryOptions: {
+        defaultCategory: false,
+        enableHashLinking: false,
+        includeAll: true
+      },
+      lightbox: true,
+      center: true,
+      //imageWidth: 250,
+    });
+  });
+</script>
+<!-- endbuild -->

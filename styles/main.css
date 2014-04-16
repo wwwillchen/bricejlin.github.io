@@ -1,0 +1,293 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600);
+/* ==========================================================================
+   Base
+   ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000313}}
+::-moz-selection {
+  background: #bcdff5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000316}}
+::selection {
+  background: #bcdff5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000320}}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000325}}
+body {
+  font: 100%/1.5 'Source Sans Pro', serif;
+  background-color: #fff;
+  color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000331}}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000336}}
+h1, h2 {
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000346}}
+.container {
+  padding: 0 16%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000350}}
+#header-wrapper {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 9999;
+  height: 129px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000358}}
+#main-header {
+  font-family: 'Merriweather';
+  position: fixed;
+  height: 130px;
+  width: 100%;
+  padding-top: 30px;
+  z-index: 9999;
+  background-color: #274973;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000367}}
+#main-header h1, #main-header h2 {
+  line-height: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000370}}
+#main-header h1 {
+  font-size: 3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000373}}
+#main-header h2 {
+  font-size: 1.3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000376}}
+#main-header #name a {
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000382}}
+#main-header {
+  background-color: #fff;
+  color: #000;
+  border-bottom: 1px solid #000;
+  margin: 0 10%;
+  padding: 30px 6% 0;
+  width: 80%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000389}}
+#main-header #name a {
+  color: #000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000392}}
+#main-header .menu li a:first-child {
+  color: #000;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\0000397}}
+#main-header {
+  border-bottom: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003100}}
+#main {
+  padding-top: 6.5em !important;
+}
+
+@media only screen and (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003104}}
+  #main-header {
+    width: 90%;
+    margin: 0 5%;
+    padding: 30px 1% 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003111}}
+#main {
+  font-size: 120%;
+  padding-top: 8em;
+  font-weight: 100;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003115}}
+#main h2 {
+  font-family: 'Merriweather', serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003120}}
+.posts {
+  font-family: 'Source Sans Pro';
+  margin-bottom: 3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003123}}
+.posts img {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003128}}
+.meta {
+  color: #7E7E7E;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003132}}
+#tech-copy {
+  margin-bottom: 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003136}}
+.social {
+  clear: both;
+  padding-top: 2%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003139}}
+.social img {
+  width: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003142}}
+.social ul {
+  overflow: hidden;
+  padding: 0 2%;
+  width: 70%;
+  margin: 1em auto;
+  list-style-type: none;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003149}}
+.social ul li {
+  width: 33%;
+  float: left;
+  -webkit-transition: all 0.2s cubic-bezier(0.15, 1, 0.85, 0.93);
+  transition: all 0.2s cubic-bezier(0.15, 1, 0.85, 0.93);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003154}}
+.social ul li:hover {
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003167}}
+.bb-underline a {
+  border-bottom: 1px dashed #ccc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003171}}
+.post-item {
+  float: left;
+  width: 47%;
+  text-align: justify;
+  color: #474747;
+  font: 200 100%/1.7 'Source Sans Pro', sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003179}}
+.left, .web-app:nth-child(even) {
+  margin-right: 38px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003183}}
+.web-app {
+  font-size: 80%;
+  text-align: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003186}}
+.web-app ul {
+  padding: 15px;
+  margin-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003190}}
+.web-app img {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003194}}
+.web-app h3 {
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003199}}
+#spotify {
+  color: #8dcc33;
+}
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+@media only screen and (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003213}}
+  .container {
+    padding: 0 6%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003216}}
+  .post-item {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003219}}
+  .web-app {
+    width: 46%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003222}}
+  .left {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 540px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003227}}
+  .web-app {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003232}}
+  #main-header {
+    text-align: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003236}}
+  #main h1 {
+    font-size: 1.3em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003239}}
+  #main h2 {
+    font-size: 1.1em;
+  }
+}
+@media only screen and (max-width: 200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003246}}
+  body {
+    font-size: 8px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003249}}
+  #main-header {
+    height: 10%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bricelin\/code\/bricelinPortfolio\/styles\/sass\/main\.scss}line{font-family:\00003252}}
+  #main {
+    padding-top: 10em;
+  }
+}
