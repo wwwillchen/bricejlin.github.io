@@ -1,1 +1,1 @@
-look into grunt-contrib-copy to concat from multiple locations
+The personal portfolio site of Brice Lin

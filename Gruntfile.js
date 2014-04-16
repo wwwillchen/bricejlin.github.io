@@ -4,31 +4,48 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        // concat: {
-        //     css: {
-        //         src: ['styles/*.css'],
-        //         dest: '.tmp/css/combined.css'
-        //     },
-        //     js: {
-        //         src: ['js/*.js'],
-        //         dest: '.tmp/js/combined.js'
-        //     }
-        // },
+        concat: {
+            vendorcss: {
+                src: ['bower_components/normalize-css/normalize.css'],
+                dest: '.tmp/css/vendor-combined.css'
+            },
+            vendorjs: {
+                src: ['bower_components/jquery/jquery.js','js/vendor/*.js'],
+                dest: '.tmp/js/vendor-combined.js'
+            },
+            css: {
+                src: ['styles/*.css'],
+                dest: '.tmp/css/combined.css'
+            },
+            js: {
+                src: ['js/*.js'],
+                dest: '.tmp/js/combined.js'
+            }
+        },
 
-        // cssmin: {
-        //     css: {
-        //         src: '.tmp/css/combined.css',
-        //         dest: 'dist/css/combined.min.css'
-        //     }
-        // },
+        cssmin: {
+            css: {
+                src: '.tmp/css/combined.css',
+                dest: 'dist/css/combined.min.css'
+            },
+            vendorcss: {
+                src: '.tmp/css/vendor-combined.css',
+                dest: 'dist/css/vendor-combined.min.css'
+            }
+        },
 
-        // uglify: {
-        //     js: {
-        //         files: {
-        //             'dist/js/combined.min.js' : ['.tmp/js/combined.js']
-        //         }
-        //     }
-        // },
+        uglify: {
+            js: {
+                files: {
+                    'dist/js/combined.min.js' : ['.tmp/js/combined.js']
+                }
+            },
+            vendorjs: {
+                files: {
+                    'dist/js/vendor-combined.min.js' : ['.tmp/js/vendor-combined.js']
+                }
+            }
+        },
 
         sass: {
             dev: {
@@ -55,21 +72,21 @@ module.exports = function (grunt) {
             }
         },
 
-        useminPrepare: {
-            options: {
-                root: 'bricelinPortfolio',
-                dest: 'dist',
-            },
-            html: '_layouts/default.html'
-        },
+        // useminPrepare: {
+        //     options: {
+        //         root: 'bricelinPortfolio',
+        //         dest: 'dist',
+        //     },
+        //     html: '_layouts/default.html'
+        // },
 
-        usemin: {
-            options: {
-                assetsDirs: 'dist'
-            },
-            html: ['dist/index.html'],
-            css: ['dist/css/*.css']
-        }
+        // usemin: {
+        //     options: {
+        //         assetsDirs: 'dist'
+        //     },
+        //     html: ['dist/index.html'],
+        //     css: ['dist/css/*.css']
+        // }
 
         // htmlmin: {
         //     dist: {
@@ -94,6 +111,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.registerTask('default', [ 'watch:css']);
-    grunt.registerTask('shrink', [ 'concat:css', 'cssmin:css', 'concat:js', 'uglify:js' ]);
+    grunt.registerTask('shrink', [ 'concat', 'cssmin', 'concat', 'uglify' ]);
     grunt.registerTask('use', ['useminPrepare', 'concat', 'cssmin', 'uglify', 'usemin']);
 };
