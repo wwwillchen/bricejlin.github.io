@@ -3,8 +3,6 @@ _site
 # source files
 node_modules
 bower_components
-styles
-js
 
 .*/
 .bowerrc
