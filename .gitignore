@@ -2,7 +2,7 @@ _site
 
 node_modules
 bower_components
-css
+styles
 
 .*/
 .bowerrc

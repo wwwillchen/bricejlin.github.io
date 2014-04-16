@@ -1,0 +1,288 @@
+#main {
+  background-image: none;
+  width: 90%;
+  margin: 0 20px 0 20px;
+  height: auto;
+  overflow: scroll; }
+  #main .white-container {
+    border: 1px solid #a8a8a8;
+    position: relative;
+    background-color: white;
+    padding: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; }
+    #main .white-container p {
+      font-size: 12px; }
+
+#main-nav {
+  position: relative;
+  left: -15%;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  transition-duration: 1s; }
+
+#scroll-container {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 80%; }
+  #scroll-container h2 {
+    color: #333; }
+
+#arrow-scroll {
+  background-image: url(../icons/arrow-scroll.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px auto;
+  width: 12%;
+  height: 75px;
+  display: block;
+  opacity: 0;
+  -webkit-transition-delay: .5s;
+  -moz-transition-delay: .5s;
+  transition-delay: .5s;
+  -webkit-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  transition-duration: 3s; }
+
+#landing-container {
+  margin: 0 auto 100px;
+  font-size: 60px; }
+  #landing-container #landing {
+    position: relative;
+    padding: 100px 0 400px;
+    width: 690px; }
+    #landing-container #landing h2 {
+      font-size: 80%;
+      color: #a8a8a8;
+      opacity: 0; }
+    #landing-container #landing .fadein-first {
+      -webkit-transition-delay: 1s;
+      -moz-transition-delay: 1s;
+      transition-delay: 1s;
+      -webkit-transition-duration: 2s;
+      -moz-transition-duration: 2s;
+      transition-duration: 2s; }
+    #landing-container #landing .fadein-second {
+      color: #333;
+      -webkit-transition-delay: 3s;
+      -moz-transition-delay: 3s;
+      transition-delay: 3s;
+      -webkit-transition-duration: 2s;
+      -moz-transition-duration: 2s;
+      transition-duration: 2s; }
+
+#profile-container {
+  margin: 0 auto;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition-duration: 1.5s;
+  -moz-transition-duration: 1.5s;
+  transition-duration: 1.5s; }
+  #profile-container .white-container {
+    margin-right: 20px;
+    float: left; }
+  #profile-container #profile-pic {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    padding: 0; }
+    #profile-container #profile-pic img {
+      width: 100%;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px; }
+  #profile-container #profile-info {
+    position: relative;
+    width: 350px;
+    height: 120px; }
+    #profile-container #profile-info h1 {
+      margin: 10px 10px 5px 10px;
+      font-size: 110%; }
+    #profile-container #profile-info p {
+      color: #a0a0a0;
+      font-size: 65%;
+      line-height: 18px;
+      padding: 10px; }
+  #profile-container #profile-follow {
+    position: relative;
+    width: 147px;
+    height: 120px; }
+    #profile-container #profile-follow h1 {
+      margin: 10px 10px 10px 10px;
+      font-size: 110%; }
+    #profile-container #profile-follow .social {
+      width: 100%;
+      overflow: hidden; }
+      #profile-container #profile-follow .social img {
+        width: 25px;
+        border-radius: 20px; }
+      #profile-container #profile-follow .social ul {
+        overflow: hidden;
+        list-style: none;
+        width: 85%;
+        margin: 0 auto; }
+        #profile-container #profile-follow .social ul li {
+          float: left;
+          padding: 4px 8px 3px;
+          -webkit-transition: all .4s ease;
+          -moz-transition: all .4s ease;
+          -ms-transition: all .4s ease;
+          -o-transition: all .4s ease;
+          transition: all .4s ease; }
+  #profile-container #profile-artists {
+    margin-top: 20px;
+    text-align: center;
+    width: 694px;
+    height: 220px;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    #profile-container #profile-artists h1 {
+      margin: 5px auto 10px; }
+  #profile-container .artist-pic {
+    height: 178px;
+    width: 25%;
+    float: left; }
+    #profile-container .artist-pic img {
+      width: 150px; }
+    #profile-container .artist-pic p {
+      text-align: center; }
+  #profile-container #cover-letter {
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 684px; }
+    #profile-container #cover-letter p {
+      padding: 10px;
+      line-height: 20px; }
+
+#apps-container {
+  margin: 0 auto; }
+  #apps-container .app-wrapper {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    clear: both; }
+  #apps-container .app-pic {
+    width: 200px;
+    float: left;
+    margin-right: 20px; }
+    #apps-container .app-pic img {
+      width: 100%; }
+  #apps-container .app-info {
+    width: 452px;
+    float: left; }
+    #apps-container .app-info h2, #apps-container .app-info p {
+      margin: 10px 0 5px 10px; }
+    #apps-container .app-info h2 {
+      margin-top: 5px; }
+
+#apps {
+  clear: both; }
+
+#resume, #apps, #follow, #profile {
+  width: 692px;
+  margin-top: 20px;
+  line-height: 36px;
+  border-bottom: 1px solid #a8a8a8;
+  margin-bottom: 20px; }
+
+#resume-container {
+  margin: 0 auto; }
+  #resume-container .resume {
+    padding: 20px;
+    width: 654px; }
+    #resume-container .resume h3 {
+      color: #41b1cb; }
+
+#follow-container {
+  margin: 0 auto; }
+  #follow-container .follow {
+    text-align: center;
+    width: 684px;
+    height: 60px;
+    margin-bottom: 60px; }
+  #follow-container p {
+    padding: 22px; }
+
+#landing-container, #profile-container,
+#apps-container, #resume-container, #follow-container {
+  width: 65%; }
+
+@media only screen and (max-width: 1220px) {
+  #landing-container, #profile-container,
+  #apps-container, #resume-container, #follow-container {
+    width: 80%; } }
+@media only screen and (min-width: 891px) and (max-width: 1020px) {
+  #landing-container, #profile-container,
+  #apps-container, #resume-container, #follow-container {
+    width: 90%; } }
+@media only screen and (max-width: 890px) {
+  #landing-container, #profile-container,
+  #apps-container, #resume-container, #follow-container {
+    width: 97%; } }
+@media only screen and (max-width: 321px) {
+  #wrapper {
+    width: 320px;
+    min-width: 300px; }
+
+  #main-nav {
+    display: none; }
+
+  #main {
+    margin: 0 2px;
+    left: 1px;
+    width: 300px; }
+    #main #landing-container {
+      font-size: 37px;
+      margin: 0 3%; }
+      #main #landing-container #landing {
+        width: 100%; }
+        #main #landing-container #landing #arrow-scroll {
+          width: 30%; }
+    #main #profile-container {
+      width: 90%; }
+      #main #profile-container .white-container {
+        float: none; }
+      #main #profile-container #profile {
+        width: auto; }
+      #main #profile-container #profile-info {
+        width: 257px;
+        margin-top: 7%; }
+      #main #profile-container #profile-pic {
+        width: 100%;
+        height: auto; }
+      #main #profile-container #profile-follow {
+        width: 257px;
+        margin-top: 7%; }
+      #main #profile-container #profile-artists {
+        display: none; }
+      #main #profile-container #cover-letter {
+        width: 95%; }
+    #main #apps-container {
+      width: 90%; }
+      #main #apps-container #apps {
+        width: auto; }
+      #main #apps-container .app-info {
+        width: 258px; }
+      #main #apps-container .app-pic {
+        width: 95%;
+        margin-bottom: 2%; }
+    #main #resume-container {
+      width: 90%; }
+      #main #resume-container #resume {
+        width: auto; }
+      #main #resume-container .resume {
+        width: 239px; }
+    #main #follow-container {
+      width: 90%; }
+      #main #follow-container p {
+        padding: 16px; }
+      #main #follow-container .white-container {
+        width: 100%; }
+      #main #follow-container #follow {
+        width: auto; }
+      #main #follow-container .follow {
+        width: 100%; } }
