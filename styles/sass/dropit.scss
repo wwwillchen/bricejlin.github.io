@@ -30,6 +30,7 @@
 .dropit .dropit-open .dropit-submenu { 
     display: block; 
     width: 170px; 
+    font-size: .8em;
     -webkit-box-shadow: -2px 4px 11px -5px rgb(111, 111, 111);
     -moz-box-shadow: -2px 4px 11px -5px rgb(111, 111, 111);
     box-shadow: -2px 4px 11px -5px rgb(111, 111, 111);
@@ -63,16 +64,16 @@
 
 @media only screen and (max-width: 400px) {
     .dropit .dropit-open .dropit-submenu {
-        width: 187px
+        width: 228px
     }
     .writer .dropit-submenu {
         left: -175%;
     }
     .photog .dropit-submenu,
     .dev .dropit-submenu {
-        left: -44%;
+        left: -46%;
     }
     .home .dropit-submenu {
-        left: -402%;
+        left: -362%;
     }
 }
