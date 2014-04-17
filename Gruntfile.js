@@ -89,7 +89,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('default', [ 'watch:css']);
+    grunt.registerTask('default', [ 'watch:css' ]);
     grunt.registerTask('shrink', [ 'newer:concat', 'newer:cssmin', 'newer:concat', 'newer:uglify' ]);
     grunt.registerTask('imagemin' ['newer:imagemin']);
 };
