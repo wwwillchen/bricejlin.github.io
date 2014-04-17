@@ -1,6 +1,11 @@
 'use strict';
 
 module.exports = function (grunt) {
+    // Show elapsed time after tasks run
+    require('time-grunt')(grunt);
+    // Load all Grunt tasks
+    require('load-grunt-tasks')(grunt);
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -65,7 +70,7 @@ module.exports = function (grunt) {
         watch: {
             css: {
                 files: ['./styles/sass/*.scss'],
-                tasks: ['sass:dev'],
+                tasks: ['newer:sass:dev'],
                 options: {
                     spawn: false
                 }
@@ -84,13 +89,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-
     grunt.registerTask('default', [ 'watch:css']);
-    grunt.registerTask('shrink', [ 'concat', 'cssmin', 'concat', 'uglify' ]);
+    grunt.registerTask('shrink', [ 'newer:concat', 'newer:cssmin', 'newer:concat', 'newer:uglify' ]);
+    grunt.registerTask('imagemin' ['newer:imagemin']);
 };
