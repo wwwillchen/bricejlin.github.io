@@ -50,6 +50,8 @@ Andddd in [AngularJS][AJS]:
   })(window, document);
 {% endhighlight %}
 
+And what's happening here is pretty much a function has parameters: `window`, `document`, `undefined`. And it is immediately invoked with arguments: `window` and `document`. The `undefined` parameter is there to ensure undefined is actually undefined and not some other value. (Though in ECMAScript 5 and later, `undefined` has been changed to be read only)
+
 
 [jQ]: http://code.jquery.com/jquery-1.11.0.js
 [RJS]: https://github.com/jrburke/requirejs/blob/master/require.js
