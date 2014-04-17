@@ -11,7 +11,7 @@ $(document).ready(function () {
         var stickyNavTop = $('#main').offset().top;
         var scrollTop = $(window).scrollTop();
 
-        if (scrollTop > 10) {
+        if (scrollTop > 30) {
             $('#main-header').addClass('sticky');
         } else {
             $('#main-header').removeClass('sticky');
@@ -20,18 +20,16 @@ $(document).ready(function () {
     
 });
 
-  $(document).ready(function () {
+$(document).ready(function () {
     $('#myGallery').rtg({
-      //imageWidth: auto,
-      spacing: 7,
-      categories: true,
-      categoryOptions: {
-        defaultCategory: false,
-        enableHashLinking: false,
-        includeAll: true
-      },
-      lightbox: true,
-      center: true,
-      //imageWidth: 250,
+        spacing: 7,
+        categories: true,
+        categoryOptions: {
+            defaultCategory: false,
+            enableHashLinking: false,
+            includeAll: true
+        },
+        lightbox: true,
+        center: true,
     });
-  });
+});

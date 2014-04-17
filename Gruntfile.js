@@ -72,33 +72,16 @@ module.exports = function (grunt) {
             }
         },
 
-        // useminPrepare: {
-        //     options: {
-        //         root: 'bricelinPortfolio',
-        //         dest: 'dist',
-        //     },
-        //     html: '_layouts/default.html'
-        // },
-
-        // usemin: {
-        //     options: {
-        //         assetsDirs: 'dist'
-        //     },
-        //     html: ['dist/index.html'],
-        //     css: ['dist/css/*.css']
-        // }
-
-        // htmlmin: {
-        //     dist: {
-        //         options: {
-        //             removeComments: true,
-        //             collapseWhitespace: true
-        //         },
-        //         files: {
-
-        //         }
-        //     }
-        // }
+        imagemin: {
+            dynamics: {
+                files: [{
+                    expand: true,
+                    cwd: 'img',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'dist/img'
+                }]
+            }
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -106,11 +89,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-htmlmin');
-    grunt.loadNpmTasks('grunt-usemin');
-    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     grunt.registerTask('default', [ 'watch:css']);
     grunt.registerTask('shrink', [ 'concat', 'cssmin', 'concat', 'uglify' ]);
-    grunt.registerTask('use', ['useminPrepare', 'concat', 'cssmin', 'uglify', 'usemin']);
 };
