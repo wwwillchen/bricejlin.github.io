@@ -21,8 +21,7 @@ $secondaryFont: 'Merriweather';
 
 body {
     font: 100%/1.5 $primaryFont, serif;
-    background-color: #fff;
-    color: black;
+    // background-color: #fff;
 }
 
 a {
@@ -31,8 +30,15 @@ a {
 }
 
 h1, h2 {
-    font-weight: 400;
     margin: 5px 0;
+}
+
+h1 {
+    font-weight: 600;
+}
+h2 {
+    font-weight: 400;
+    font-size: 1.2em;
 }
 
 
@@ -47,7 +53,6 @@ h1, h2 {
 #main-header {
     font-family: $secondaryFont;
     background-color: #fff;
-    color: #000;
     height: 130px;
     width: 100%;
     padding-top: 30px;
@@ -156,6 +161,8 @@ h1, h2 {
     text-align: justify;
     color: rgb(71,71,71);
     line-height: 1.7;
+    -webkit-transition: all .5s ease .5s;
+    transition: all .5s ease .5s;
 }
 
 .left, .web-app:nth-child(even) {
@@ -199,6 +206,7 @@ h1, h2 {
 @media only screen and (max-width: 540px) {
     .post-item {
         width: 100%;
+        float: none;
     }
 }
 @media only screen and (max-width: 400px) {
@@ -212,6 +220,12 @@ h1, h2 {
         h2 {
             font-size: 1.1em;
         }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #main-header {
+        font-size: 0.8em;
     }
 }
 
