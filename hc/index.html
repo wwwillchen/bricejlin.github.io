@@ -35,6 +35,14 @@
     <script type="text/jsx" src="js/hc.js"></script>
 
     <script>
+      $(document).ready(function () {
+        setTimeout(function () {
+          $('a').click(function (e) {
+            e.preventDefault();
+            $(this).trigger('hover');
+          });
+        }, 1000);
+      });
       var refTagger = {
         settings: {
           bibleVersion: "ESV",
