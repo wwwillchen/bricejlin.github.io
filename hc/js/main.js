@@ -20,3 +20,12 @@ var refTagger = {
   g.src = "http://api.reftagger.com/v2/RefTagger.js";
   s.parentNode.insertBefore(g, s);
 }(document, "script"));
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sWorker.js')
+    .then(function (reg) {
+      console.log(':D', reg);
+    }).catch(function (err) {
+      console.log(':(', err);
+    });
+}
