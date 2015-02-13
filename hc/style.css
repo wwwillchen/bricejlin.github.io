@@ -75,12 +75,10 @@ a {
   display: none;
 }
 
-/* React */
-.example-enter {
-  opacity: 0.01;
-  transition: opacity .5s ease-in;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
+/* reftagger tooltip override */
+@media (max-width: 360px) {
+  div.rtTooltip.rtLight {
+    width: 100%;
+    left: 0 !important;
+  }
 }
