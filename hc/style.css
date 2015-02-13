@@ -16,6 +16,7 @@
 
 body {
   font-size: 100%;
+  font: 100% "Source Sans Pro", serif;
 }
 
 input {
@@ -37,7 +38,6 @@ a {
 
 #title {
   border: 3px solid black;
-  font-size: 0.8em;
   letter-spacing: -0.1em;
   text-align: center;
   text-transform: uppercase;
@@ -66,8 +66,9 @@ a {
 }
 
 .response {
+  font-weight: 400;
   display: block;
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.6em;
 }
 
