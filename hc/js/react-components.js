@@ -47,10 +47,11 @@ var Question = React.createClass({
     }
   },
   render: function () {
+    var data = this.props.data;
     return (
       <article className="question">
-        <h1 onClick={ this.handleClick }>{ this.props.data.question }</h1>
-        <Response data={ this.props.data } />
+        <h1 onClick={ this.handleClick }>{ data.id }. { data.question }</h1>
+        <Response data={ data } />
       </article>
     );
   }
