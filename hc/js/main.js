@@ -1,10 +1,16 @@
 $(document).ready(function () {
   setTimeout(function () {
-    $('a').click(function (e) {
-      e.preventDefault();
-      $(this).trigger('hover');
+    var vTagged = new Promise(function (resolve, reject) {
+      refTagger.tag(document.body);
+      resolve();
     });
-    refTagger.tag(document.body);
+
+    vTagged.then(function () {
+      $('.rtBibleRef').click(function (e) {
+        e.preventDefault();
+        $(this).trigger('hover');
+      });
+    });
   }, 1000);
 });
 
